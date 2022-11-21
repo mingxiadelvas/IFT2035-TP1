@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Rapport\\ Travail Pratique 1}
+\author{Ming-Xia Delvas : 20104038\\
+François Corneau-Tremblay : 20101907}
+\date{Mai 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Objectif du travail}
+Pour commencer un travail de cette envergure, il faut d'abord déterminer les objectifs. Bien sur, il y a l'objectif principal de remettre un travail satisfaisant aux conditions de remise. Cependant, celui-ci est une excuse pour parvenir à un objectif plus abstrait: acquérir de l'expérience directe avec Haskell. C'est avec cet objectif en tête que nous avons approcher le projet. Oui, il était important pour nous de fournir un code fonctionnel, mais il était d'autant plus important de bien comprendre chacune des parties de code que nous avons implémenter.\\\\
+
+Travailler sur un projet aussi complexe, nous a permis de plonger plus en profondeur dans les rouages d'Haskell, autant dans sa syntaxique que dans l'abstrait, ceci étant notre première rencontre avec un langage fonctionnel. Il nous a fallu nous y reprendre plus d'une fois, les subtilités de ce paradigme se faisant connaître à chacune de nos nombreuses recherches sur le net, toujours dans cette quête de la compréhension.\\\\
+
+
+Grâce à la mise en situation très ancrée dans le concret de ce travail pratique, nous avons pu appronfondir nos connaissances sur certains aspects, tels que le principe du \textit{pattern mathcing}, l'encapsulation et la récursion. L'expérience était d'autant plus enrichissante puisqu'elle nous a permis d'appliquer directement les notions vues en classe, renforçant ainsi notre compréhension du sujet et offrant un beau défi.\\\\
+
+
+Malgré tout, ces deux semaines de travail nous ont semblé courte pour parfaire l'entièreté de la matière qui nous a été demandé ce qui a laissé place à des lacunes sur certaines facettes.
+
+
+\section{Lire et comprendre cette donnée}
+La première difficulté majeure que nous avons dû franchir a été l'extraction des éléments clés du problème et l'établissement d'une correspondance entre la documentation du langage a créé et le code Haskell à écrire. Il nous a été nécessaire de pencher longtemps sur l'énoncé pour obtenir les informations pertinente et les intégrer. Même si l'énoncé nous indiquait le contraire, il nous a quand même fallu survoler la partie du code déjà écrite transformant le fichier texte en \textit{Sexp} pour bien établir quelle entrée nous allions recevoir.\\\\
+
+Les sources d'incompréhension principales viennent de la fonction \textit{hastype} et de \textit{call} et \textit{fun}. Dans le premier cas, l'incompréhension vient de son utilité qui n'est pas immédiate et les exemples d'utilisation peu nombreux dans le code d'exemple. Pour ce qui est de \textit{call} et \textit{fun}, la confusion vient du choix de noms qui a mené à l'interprétation suivante: \textit{call} est l'appel d'une fonction ayant comme corps une expression de type \textit{fun} au lieu de l'interprétation qui aurait dû être faite où les deux sont simplement une fonction nommée et une fonctione anonyme.\\\\
+
+\section{Exécution}
+Dans cette section, chacun des membres exposera les difficultés qu'il et elle a rencontré durant la complétion de travail.\\\\
+
+Une des fonctions dont l'implémentation a été la plus difficile est la partie de \textit{s2l} gérant le cas où l'expression était le symbole \textit{let}. En effet, il a été ardu de déterminer comment obtenir une définition permettant la déclaration récursive sans obtenir une boucle infinie. \\\\
+
+Dans un autre cas, les fonctions \textit{infer} et \textit{check} ne furent pas difficile à programmer en tant que telles, mais le méchanisme d'interprétation et de vérification de types a pris du temps à bien internaliser pour voir comment les deux fonctions s'imbriquaient l'une dans l'autre. La seule \textit{Lexp} qui fut difficile à implémenter était \textit{fetch} puisqu'il n'était pas immédiatement évident comment récupérer les types requis. \\\\
+
+Finalement, il est important de parler de la fonction \textit{eval2}. IL y a eu un problème de communication dans notre équipe où chaque coéquipier était convaincu que l'autre avait pris la responsabilité de faire cette partie du travail. Cette erreur a été réalisée très tard et de ce fait, la fonction \textit{eval2} n'est pas complète.\\\\
+
+\section{Conclusion}
+Nous aimerions conclure se rapport et clore sur travail pratique sur quelques commentaires. Un avis courant est que le temps nécessaire à la complétion de ce travail est trop court. Nous partageons cet avis, mais notre opinion est biaisée par le fait que nous avons réaliser très tard qu'une partie essentielle avait été oubliée. Par contre la vidéo \textit{Promenade TP 1} ainsi que l'immense patience et disponibilité des démonstrateurs nous ont énormément aidé pour la compréhension du problème et de l'utilisation du langage en lui-même. Sans eux il nous aurait probablement pas été possible d'avancer autant.
+
+\end{document}

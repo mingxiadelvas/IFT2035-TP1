@@ -1,0 +1,13 @@
+ -*- mode: lisp-data; coding: utf-8 -*-
+;;;Ming-Xia Delvas : 20104038
+;;;François Corneau-Tremblay : 20101907
+
+(call * 1 2)
+
+(tuple 4 5)
+
+(let (x 2) x)
+
+(if (5 < 6) (x = y) (x = 0))
+
+(hastype (let (x 2) 2) Int)
